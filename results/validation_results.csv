@@ -1,0 +1,17 @@
+family,implementation,parameters,fit_seconds,accuracy,log_loss,brier,roc_auc
+majority baseline,-,"{""label"": 1}",,0.503254,,,
+rank heuristic,-,"{""rule"": ""lower ATP rank wins, ties to player 2""}",,0.639371,,,
+decision tree,custom,"{""max_depth"": 4, ""min_samples_split"": 20}",2.22,0.639913,0.621986,0.216689,0.705947
+decision tree,custom,"{""max_depth"": 6, ""min_samples_split"": 20}",3.06,0.643709,0.61995,0.215855,0.710571
+decision tree,custom,"{""max_depth"": 8, ""min_samples_split"": 20}",3.85,0.643348,0.63471,0.217057,0.710468
+decision tree,custom,"{""max_depth"": 8, ""min_samples_split"": 50}",3.8,0.643348,0.635488,0.217327,0.709729
+decision tree,sklearn,"{""max_depth"": 4, ""min_samples_split"": 20}",1.32,0.639913,0.621986,0.216689,0.705947
+decision tree,sklearn,"{""max_depth"": 6, ""min_samples_split"": 20}",1.9,0.643709,0.620234,0.215939,0.710475
+decision tree,sklearn,"{""max_depth"": 8, ""min_samples_split"": 20}",2.46,0.643529,0.628843,0.216988,0.710283
+decision tree,sklearn,"{""max_depth"": 8, ""min_samples_split"": 50}",2.51,0.644252,0.628578,0.216866,0.710529
+random forest,custom,"{""max_depth"": 6, ""min_samples_split"": 20, ""n_estimators"": 25}",12.76,0.647325,0.617788,0.214598,0.716999
+random forest,custom,"{""max_depth"": 8, ""min_samples_split"": 20, ""n_estimators"": 25}",16.72,0.655459,0.612188,0.212383,0.722039
+random forest,custom,"{""max_depth"": 8, ""min_samples_split"": 20, ""n_estimators"": 50}",35.03,0.653651,0.612713,0.212537,0.721829
+random forest,sklearn,"{""max_depth"": 6, ""min_samples_split"": 20, ""n_estimators"": 25}",3.94,0.651302,0.615709,0.213688,0.719382
+random forest,sklearn,"{""max_depth"": 8, ""min_samples_split"": 20, ""n_estimators"": 25}",5.12,0.657086,0.613716,0.213009,0.720101
+random forest,sklearn,"{""max_depth"": 8, ""min_samples_split"": 20, ""n_estimators"": 50}",10.64,0.656363,0.613163,0.212753,0.721054

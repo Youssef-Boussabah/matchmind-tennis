@@ -1,0 +1,7 @@
+model,implementation,split,n_rows,accuracy,log_loss,brier,roc_auc,fit_seconds,predict_seconds,parameters
+majority baseline,-,test,5589,0.500447,,,,,,"{""label"": 1}"
+rank heuristic,-,test,5589,0.641081,,,,,,"{""rule"": ""lower ATP rank wins, ties to player 2""}"
+decision tree,custom,test,5589,0.636608,0.626537,0.218929,0.701394,3.18,0.007,"{""max_depth"": 6, ""min_samples_split"": 20}"
+decision tree,sklearn,test,5589,0.636608,0.626423,0.218879,0.701576,2.12,0.001,"{""max_depth"": 6, ""min_samples_split"": 20}"
+random forest,custom,test,5589,0.646985,0.61825,0.215243,0.712438,18.66,0.225,"{""max_depth"": 8, ""min_samples_split"": 20, ""n_estimators"": 25}"
+random forest,sklearn,test,5589,0.64949,0.61728,0.214884,0.713367,10.41,0.019,"{""max_depth"": 8, ""min_samples_split"": 20, ""n_estimators"": 50}"

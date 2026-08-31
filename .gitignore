@@ -1,0 +1,40 @@
+# macOS
+.DS_Store
+__MACOSX/
+._*
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+
+# virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# editors
+.vscode/
+.idea/
+
+# OS/temp
+Thumbs.db
+*.tmp
+
+# testing/tool caches
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+
+# Generated feature sets: rebuild with scripts/build_dataset.py
+data/processed/*.csv
+
+# build outputs
+dist/
+build/
+*.egg-info/

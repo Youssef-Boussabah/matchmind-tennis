@@ -1,0 +1,19 @@
+mirror_repository=https://github.com/Kadantte/tennis_atp.git
+mirror_commit=712be0c5ade693cdab9e69c23a71a0edf5a23c44
+original_dataset=Jeff Sackmann / Tennis Abstract
+original_project=https://github.com/JeffSackmann/tennis_atp
+license=CC BY-NC-SA 4.0
+min_season=1991
+max_season=2026
+latest_tourney_date=20260525
+partial_final_season=true
+
+The match files in data/all/ are LF-normalised copies of the pinned source files above.
+The source files use CRLF line endings; removing the carriage returns reproduces each
+repository file byte for byte. No CSV value was altered.
+
+The 1991-2024 files already in this repository were verified content-identical to the
+same pinned snapshot before 2025 and 2026 were added: line endings were the only
+difference, so those files were left untouched rather than recopied.
+
+data/LICENSE.md remains the authoritative licence notice for this data.
